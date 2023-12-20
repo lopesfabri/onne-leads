@@ -810,8 +810,7 @@ footer {
 @media only screen and (max-width: 768px) {
   /*_________           
   * HEADER */   
-  .logo {
-    max-width: 50%;
+  .logo {   
     top: 30px;
   }
 
@@ -974,13 +973,12 @@ footer {
   /*_________           
   * HEADER */   
   .logo {
-    max-width: 30%;
     top: 20px;
   }
 
   #content h1 {
-  font-size: 22px;
-  margin-top: 30px;
+  font-size: 20px;
+  margin-top: 60px;
   }
 
   #content h2 {
@@ -989,6 +987,7 @@ footer {
 
   #content p {
     font-size: 13px;
+    font-weight: 500;
   }
 
   form {
