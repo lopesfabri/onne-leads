@@ -794,12 +794,25 @@ footer {
   * RESPONSIVE TO MOBILE *
   _______________________*/ 
 
+  @media only screen and (max-width: 1024px) {
+    .logo {
+      max-width: 80%;
+    }
+  
+
+    #content h1 {
+      padding: 20px;
+      margin-top: 100px;
+    }
+  }
+
+
 @media only screen and (max-width: 768px) {
   /*_________           
   * HEADER */   
   .logo {
     max-width: 50%;
-    top: 50px;
+    top: 30px;
   }
 
   #content {
@@ -807,7 +820,7 @@ footer {
   }
 
   #content h1 {
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 110px;
   }
 
@@ -962,46 +975,27 @@ footer {
   * HEADER */   
   .logo {
     max-width: 30%;
-    top: 10px;
-  }
-
-  #content {
-    padding: 20px;
+    top: 20px;
   }
 
   #content h1 {
-    font-size: 20px;
-  margin-bottom: 50px;
+  font-size: 22px;
+  margin-top: 30px;
   }
 
   #content h2 {
     font-size: 16px;
   }
 
-  p {
-    font-size: 12px;
+  #content p {
+    font-size: 13px;
   }
 
   form {
-
-    width: 60%;
+    width: 70%;
   }
-
-  /* .card p {
-    font-size: 15px;
-  } */
 
   .cards {
     gap: 20px;
-    /* padding: 10px; */
   }
-
-   /* .cards .card {
-    width: 180px;
-    height: 70px;
-  } */
-  
-  /* .form-control label span {
-    font-size: 18px;
-  } */
 } 
