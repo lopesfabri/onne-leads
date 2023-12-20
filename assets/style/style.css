@@ -962,7 +962,7 @@ footer {
   * HEADER */   
   .logo {
     max-width: 30%;
-    top: 20px;
+    top: 10px;
   }
 
   #content {
@@ -971,7 +971,7 @@ footer {
 
   #content h1 {
     font-size: 20px;
-    margin-top: 110px;
+  margin-bottom: 50px;
   }
 
   #content h2 {
@@ -979,12 +979,12 @@ footer {
   }
 
   p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   form {
 
-    width: 75%;
+    width: 60%;
   }
 
   /* .card p {
@@ -992,8 +992,8 @@ footer {
   } */
 
   .cards {
-    gap: 30px;
-    padding: 10px;
+    gap: 20px;
+    /* padding: 10px; */
   }
 
    /* .cards .card {
@@ -1001,7 +1001,7 @@ footer {
     height: 70px;
   } */
   
-  .form-control label span {
+  /* .form-control label span {
     font-size: 18px;
-  }
+  } */
 } 
