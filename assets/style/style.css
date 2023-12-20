@@ -971,14 +971,15 @@ footer {
 /*________________________________________*/
 @media only screen and (max-width: 430px) {
   /*_________           
-  * HEADER */   
+  * HEADER */  
   .logo {
-    top: 20px;
+  max-width: 30px;
+  top: 15px;
   }
 
   #content h1 {
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 40px;
   }
 
   #content h2 {
@@ -986,8 +987,8 @@ footer {
   }
 
   #content p {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 400;
   }
 
   form {
