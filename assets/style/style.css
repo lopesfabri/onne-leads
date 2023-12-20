@@ -974,12 +974,12 @@ footer {
   * HEADER */  
   .logo {
   max-width: 50%;
-  top: 15px;
+  top: 10px;
   }
 
   #content h1 {
   font-size: 20px;
-  margin-top: auto;
+  padding-top: 50px;
   }
 
   #content h2 {
