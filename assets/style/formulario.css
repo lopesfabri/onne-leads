@@ -1,0 +1,144 @@
+/*______________________
+/* GLOBAL ADJUSTMENTS */
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+
+/*______________________
+/* INTERFACE ELEMENTS */
+
+body {
+  background: rgba(30, 6, 38, 0.9);
+  background-image: linear-gradient(180deg, #230e2f, #15142b);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+main,
+section {
+  max-width: 700px;
+}
+
+header > h1 {
+  color: white;
+  text-shadow: 3px 3px 0px black;
+  margin-top: 50px;
+}
+
+main,
+section {
+  background-color: white;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
+}
+
+a {
+  color: #15142b;
+  background-color: rgba(55, 41, 145, 0.1);
+  padding: 0 3px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 0.5px dotted #372991;
+  text-align: center;
+}
+
+a:hover {
+  color: #372991;
+  border-bottom: 1px solid #372991;
+}
+
+
+/*_________________
+/* FORM ELEMENTS */
+
+form {
+  background-color: rgba(55, 41, 145, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  width: fit-content;
+  font-size: 0.8em;
+  font-weight: 100;
+  background-color: rgba(55, 41, 145, 0.2);
+  padding: 3px 7px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1em;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  font-size: 1em;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+/*______________
+/* RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+  header > h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  section {
+    margin: 5px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  form label {
+    font-size: 0.7em;
+  }
+
+  input[type="text"] {
+    padding: 10px 15px;
+    font-size: 0.9em;
+  }
+
+  input[type="submit"] {
+    padding: 8px 15px;
+  }
+}
