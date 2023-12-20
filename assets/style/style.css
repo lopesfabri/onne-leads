@@ -794,7 +794,7 @@ footer {
   * RESPONSIVE TO MOBILE *
   _______________________*/ 
 
-  @media only screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     .logo {
       max-width: 80%;
     }
@@ -807,7 +807,7 @@ footer {
   }
 
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /*_________           
   * HEADER */   
   .logo {   
@@ -969,7 +969,7 @@ footer {
 }
 
 /*________________________________________*/
-@media only screen and (max-width: 430px) {
+@media screen and (max-width: 430px) {
   /*_________           
   * HEADER */  
   .logo {
