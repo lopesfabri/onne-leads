@@ -1,6 +1,6 @@
 <?php 
 
-    $dbHost = 'localhost';
+    $dbHost = 'https://onne-leads.netlify.app';
     $dbUsername = 'root';
     $dbPassword = '';
     $dbName = 'onne';
