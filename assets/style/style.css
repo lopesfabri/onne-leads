@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 /*___________________________________
               
@@ -10,7 +11,7 @@ body {
   font-family: "Krub", sans-serif;
   background-color: #f5f6fa;
 }
- 
+
 /*_________         
 /* titles */
 .title {
@@ -20,7 +21,6 @@ body {
   color: #1e0626;
   text-shadow: 2px 2px 4px #1e0626;
 }
-
 
 /*___________________________________
               
@@ -35,7 +35,7 @@ _____________________________________*/
   width: 100%;
   z-index: 2;
   background-color: #1e0626;
-  padding: 0; 
+  padding: 0;
   overflow: hidden;
 }
 
@@ -45,7 +45,6 @@ _____________________________________*/
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
- 
 }
 
 #image-carousel {
@@ -73,33 +72,34 @@ _____________________________________*/
 }
 
 #image-carousel figure img {
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
 
 @keyframes slide {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
-  
   }
-  25%, 75% {
+  25%,
+  75% {
     opacity: 1;
-  
   }
   50% {
-    opacity: 0; 
+    opacity: 0;
   }
 }
 
 #overlay {
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(30, 6, 38, 0.8);
+  background: rgba(30, 6, 38, 0.6);
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -114,14 +114,14 @@ _____________________________________*/
   color: #fff;
 }
 
-#content > h1 {
+#content h1 {
   font-size: 60px;
   font-family: inherit;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-#content > h2 {
+#content h2 {
   margin-bottom: 15px;
   text-align: center;
   font-size: 28px;
@@ -134,7 +134,7 @@ _____________________________________*/
   animation-delay: 2s;
 }
 
-#content > p {
+#content p {
   margin-bottom: 8px;
   line-height: 1.7;
   font-weight: 300;
@@ -147,6 +147,7 @@ _____________________________________*/
   flex-direction: row;
   justify-content: center;
   margin-bottom: 30px;
+  gap: 20px;
 }
 
 .card {
@@ -182,7 +183,7 @@ _____________________________________*/
 }
 
 .button-card::before {
-  content: '';
+  content: "";
   display: block;
   width: 0px;
   height: 100%;
@@ -206,7 +207,7 @@ _____________________________________*/
   overflow: hidden;
   cursor: pointer;
   transition: background 0.2s ease-out, box-shadow 0.2s ease-in;
-  display: flex; 
+  display: flex;
   align-items: center;
 }
 
@@ -219,7 +220,7 @@ _____________________________________*/
 }
 
 .button-style::before {
-  content: '';
+  content: "";
   display: block;
   width: 0px;
   height: 86%;
@@ -248,17 +249,103 @@ _____________________________________*/
   }
 }
 
- .tip {
-  font-size: 14px;
+.tip {
+  font-size: 20px;
   text-transform: uppercase;
-  font-weight: 200;
-  align-items: center; 
+  font-weight: 300;
+  align-items: center;
   letter-spacing: 1px;
   margin: auto;
   font-family: "Krub", "Segoe UI", sans-serif;
+  text-decoration: none;
+  color: #fff;
 }
 
-form {
+.botao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botao__fale__conosco {
+  /* display: flex;
+  justify-content: center;
+  border: 2px solid rgb(174, 106, 255);
+  border-radius: 8px;
+  width:20%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Krub", "Segoe UI", sans-serif;
+  padding: 10px;
+  margin:10px;
+  text-decoration: none;
+  color: #fff; */
+
+  /* margin: 0 auto; */
+  position: relative;
+  padding: 25px;
+  border-radius: 7px;
+  border: 1px solid rgb(174, 106, 255);
+  font-size: 14px;
+  font-family: "Krub", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.2s ease-out, box-shadow 0.2s ease-in;
+}
+
+.botao__fale__conosco:hover {
+  background: rgb(174, 106, 255);
+}
+
+.botao__fale__conosco button:hover::before {
+  animation: sh02 0.5s 0s linear;
+}
+
+.botao__fale__conosco button::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.botao__fale__conosco button:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+/* form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -406,13 +493,13 @@ form {
 .btn-secondary:active {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in;
-}
+} */
 
 /*___________________________________
               
 * ABOUT *
 _____________________________________*/
-#about { 
+#about {
   max-width: 100%;
   padding-top: 100px;
   padding-bottom: 30px;
@@ -449,7 +536,6 @@ _____________________________________*/
   box-shadow: 10px 10px 5px 0px #888888;
 }
 
-
 /*__________________
 /*Animation About */
 @keyframes HeaderH1-moveToTheRight {
@@ -481,13 +567,27 @@ _____________________________________*/
 }
 
 /*___________________________________
+
+
+/*___________________________________
+
+* SUBSCRIPTION *
+_____________________________________*/
+/* .cta {
+  background-color: #1e0626;
+  border-top: 10px solid #000;
+  border-bottom: 10px solid #000;
+  margin-top: 50px;
+} */
+
+
+/*___________________________________
               
 * TESTIMONIALS *
 _____________________________________*/
-#testimonials  {
-margin-top: 50px;
+#testimonials {
+  margin-top: 50px;
 }
-
 
 #carouselExampleDark {
   position: relative;
@@ -527,7 +627,7 @@ margin-top: 50px;
   font-size: 18px;
 }
 
- span {
+span {
   color: #1e0626;
   font-weight: 800;
 }
@@ -548,61 +648,144 @@ _____________________________________*/
   margin-top: -150px;
 }
 
+
 /*___________________________________
-              
-* SPEAKERS *
+
+* Contacto *
 _____________________________________*/
-.circle-img {
-  width: 140px;
-  height: 140px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-top: 60px;
-  border: 2px solid #1e0626;
-}
 
-.circle-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.col-lg-4 {
-  margin-bottom: 20px;
-}
-
-.col-lg-4 h2 {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.col-lg-4 p {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 15px;
+.contact_conteudo {
+  padding: 5% 15%; 
+  display: flex;
+  
+  align-items: center;
+  /* gap: 50px; */
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid #1e0626;
+  background: linear-gradient(to right, #1e0626, #62197a);
+  box-shadow: 10px 10px 5px 0px #888888;
+  
+}
+
+.container form .descr {
+  font-size: 25px;
+  font-weight: 500;
+  color: #e8e8e8;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input, textarea {
+  margin: 1em 0 1em 0;
+  width: 500px;
+  position: relative;
+}
+
+.input input, textarea {
+  font-size: 100%;
+  padding: 0.7em;
+  outline: none;
+  color: #e8e8e8;
+  border: none;
+  border-bottom: 2px solid #e8e8e8;
+  background: transparent;
+  border-radius: none;
+  width: 100%;
+  resize: none;
+}
+
+.input label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  color: #e8e8e8;
+  padding: 0.7em;
+  margin-left: 0.1em;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+}
+
+.input :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  padding: 0.4em;
+  background: transparent;
+}
+
+.input textarea:focus ~ label,
+.input textarea:valid ~ label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  padding: 0.4em;
+  background: transparent;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(174, 106, 255);
+}
+
+.form button {
+  color: #e8e8e8;
+  font-size: 20px;
+  align-self: flex-start;
+  padding: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.form button:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e8e8e8;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.form button:hover:before {
+  opacity: 0.2;
+}
+
+.form button:hover {
+  transform: translateY(-3px);
+  background-color: #62197a;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact_imagem {
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 0px #888888;
 }
 
 
 /*___________________________________
-              
-* SUBSCRIPTION *
-_____________________________________*/
-.cta {
-  background-color: #1e0626;
-  border-top: 10px solid #000;
-  border-bottom: 10px solid #000;
-  margin-top: 50px;
-}
 
-/*___________________________________
-              
 * FOOTER *
 _____________________________________*/
 footer {
@@ -697,7 +880,7 @@ footer {
 .footer-list {
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 18px;
   gap: 0.5rem;
   list-style: none;
   color: #ccc;
@@ -730,7 +913,7 @@ footer {
 
 #footer-subscribe p {
   color: #ccc;
-  font-size: max(16px, 1vw);
+  font-size: 18px;
 }
 
 #input-group {
@@ -786,32 +969,30 @@ footer {
   font-size: 1rem;
   padding: 1rem;
   color: #ccc;
-} 
+}
 
-
-  /*______________________
-            
+/*______________________
+   
   * RESPONSIVE TO MOBILE *
-  _______________________*/ 
+  _______________________*/
 
-  @media screen and (max-width: 1024px) {
-    .logo {
-      max-width: 80%;
-    }
-  
-
-    #content > h1 {
-      padding: 20px;
-      margin-top: 100px;
-    }
+@media screen and (max-width: 1024px) {
+  .logo {
+    max-width: 80%;
   }
 
+  #content h1 {
+    padding: 20px;
+    margin-top: 100px;
+    font-size: 1px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   /*_________           
-  * HEADER */   
-  .logo {   
-    top: 30px;
+  * HEADER */
+  .logo {
+    top: 10px;
   }
 
   #content {
@@ -819,7 +1000,7 @@ footer {
   }
 
   #content h1 {
-    font-size: 24px;
+    font-size: 32px;
     margin-top: 110px;
   }
 
@@ -832,7 +1013,6 @@ footer {
   }
 
   form {
-
     width: 95%;
   }
 
@@ -846,19 +1026,19 @@ footer {
     padding: 20px;
   }
 
-   .cards .card {
+  .cards .card {
     width: 180px;
     height: 70px;
   }
-  
+
   .form-control label span {
     font-size: 18px;
   }
 
   /*__________________
-           
+  
   * ABOUT *
-  ____________________*/ 
+  ____________________*/
   #about {
     padding-top: 50px;
   }
@@ -872,9 +1052,38 @@ footer {
     width: 60%;
   }
 
+  /*_____________________
+   
+  * SUBSCRIPTION *
+  _______________________*/
+  .cta {
+    padding: 2rem;
+  }
+
+  .cta h1 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .btn-secondary {
+    padding: 8px 4px;
+    font-size: 10px;
+  }
 
   /*____________________
-            
+   
   * TESTIMONIALS *
   _____________________*/
   .carousel-caption h4 {
@@ -898,10 +1107,10 @@ footer {
   }
 
   /*_____________________
-            
+  
   * BANNER *
   _______________________*/
- .banner {
+  /* .banner {
   padding: 0.5rem; 
  }
 
@@ -911,55 +1120,10 @@ footer {
 
  .banner p {
   font-size: 1rem; /
- }
+ } */
 
-
- /*_____________________
-            
-  * SPEAKERS *
-  _______________________*/
-  .circle-img {
-    margin-top: 40px;
-  }
-
-  .col-lg-4 p {
-    font-size: 14px;
-  }
-
-
- /*_____________________
-            
-  * SUBSCRIPTION *
-  _______________________*/
- .cta {
-  padding: 2rem; 
- }
-
- .cta h1{
-  font-size: 1.5rem; 
- }
-
-  .cta p {
-  font-size: 1rem; 
-  }
-
-  .btn {
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 12px;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  }
-
-  .btn-secondary {
-    padding: 8px 4px;
-    font-size: 10px;
-  }
-
-  
   /*_____________________
-            
+   
   * FOOTER *
   _______________________*/
   .footer-content {
@@ -972,8 +1136,8 @@ footer {
 @media screen and (max-width: 430px) {
   /* HEADER */
   .logo {
-    max-width: 50%; 
-    top: 10px;
+    max-width: 50%;
+    top: 30px;
   }
 
   #content {
@@ -981,8 +1145,8 @@ footer {
   }
 
   #content h1 {
-    font-size: 20px;
-    padding-top: 70px;
+    font-size: 28px;
+    padding-top: 30px;
   }
 
   #content h2 {
@@ -990,7 +1154,7 @@ footer {
     padding: 0 30px 0 30px;
   }
 
- p {
+  p {
     font-size: 12px;
     font-weight: 500;
     padding: 0 20px 0 20px;
@@ -1014,10 +1178,48 @@ footer {
 
   .cards .card {
     width: 50%;
-    height: auto;
   }
 
   .form-control label span {
     font-size: 14px;
+  }
+
+  /* BANNER */
+  .banner h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  /* SUBSCRIPTION */
+  .cta h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  /* FOOTER */
+  .footer-contacts p {
+    font-size: 16px;
+  }
+}
+
+/*___________________________________*/
+@media screen and (max-width: 390px) {
+  /* HEADER */
+  .logo {
+    top: 10px;
+  }
+
+  #content h1 {
+    font-size: 20px;
+    padding-top: 4rem;
+  }
+
+  .cards .card {
+    height: auto;
+  }
+
+  /* TESTIMONIALS */
+  .carousel-item {
+    height: 26rem;
   }
 }

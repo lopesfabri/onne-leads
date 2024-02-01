@@ -15,9 +15,9 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <!--Styles-->
+    <!--Styles-->
     <link rel="stylesheet" href="assets/style/style.css">
-   
+
 
 </head>
 
@@ -49,20 +49,31 @@
             <h2>"Explore Estratégias de Alta Performance para Alcançar o Seu Sucesso."</h2>
 
             <div class="cards">
+
                 <div class="card one button-style">
-                    <p class="tip">Consulting</p>
+                    <a class="tip" href="#Consulting">Consulting</a>
+                    <!-- <p class="tip">Consulting</p> -->
                 </div>
                 <div class="card two button-style">
-                    <p class="tip">Marketing</p>
+                    <a class="tip" href="#Marketing">Marketing</a>
+                    <!-- <p class="tip">Marketing</p> -->
                 </div>
                 <div class="card three button-style">
-                    <p class="tip">Training</p>
+                    <a class="tip" href="#Training">Training</a>
+                    <!-- <p class="tip">Training</p> -->
+                </div>
+                <div class="card three button-style">
+                    <a class="tip" href="Events">Events</a>
+                    <!-- <p class="tip">Events</p> -->
                 </div>
             </div>
 
             <p>Participe no nosso evento e eleve os seus resultados ao máximo!</p>
 
-            <fieldset>
+            <div class="botao">
+                <a href="#contacto" class="botao__fale__conosco">Fale conosco!</a>
+            </div>
+            <!-- <fieldset>
                 <form action="./views/form.php" method="post">
                     <div class="form-row">
                         <div class="form-control">
@@ -90,7 +101,7 @@
                         <button type="submit" name="submit" value="Enviar">Enviar &raquo;</button>
                     </div>
                 </form>
-            </fieldset>
+            </fieldset> -->
         </div>
     </div>
 </header>
@@ -104,24 +115,16 @@
                 <div class="row featurette about-us">
                     <div class="col-md-8">
                         <h3 class="featurette-heading fw-normal lh-1 title">Onne</h3>
-                        <p class="lead">A <span>onne</span> é um verdadeiro acelerador
-                            do desenvolvimento e crescimento dos seus clientes, melhorando a sua performance.</p>
-                        <br>
-                        <p class="lead">Uma equipa experiente e multidisciplinar apta para
-                            apoiar projetos, empresários e empreendedores assume total flexibilidade visível nas áreas
-                            de <span>Consulting</span>, <span>Marketing</span> e <span>Training</span>.
-                            Estas áreas integram-se e completam-se no sentido de potenciar a criação de valor dentro das
-                            empresas, maximizando os seus resultados. Uma missão focada na melhoria dos resultados e no
-                            crescimento das organizações, vertical e horizontalmente, identificando e implementando
-                            soluções ajustadas aos desafios mais arrojados dos nossos clientes.</p>
-                        <br>
-                        <p class="lead">Para o efeito, a <span>onne</span> conta com a polivalência dos seus quadros
-                            e com uma
-                            carteira de parceiros testados e criteriosamente selecionados. Só com os melhores fazemos
-                            equipa, de forma a que consigamos atingir mais facilmente os resultados, sendo que o
-                            objetivo é que as equipas trabalhem como <span>onne</span>.</p>
+                        <p class="lead">A Onne impulsiona o desenvolvimento e crescimento dos clientes por meio de uma
+                            equipe experiente em <span>Consulting</span>, <span>Marketing</span>, <span>Training</span>
+                            e <span>Eventos</span>. <br> <br>
+                            Nosso foco é criar valor e maximizar
+                            resultados, adaptando soluções aos desafios específicos. <br> <br>
+                            parceiros
+                            selecionados, trabalhamos para que as equipes atuem como Onne, visando o sucesso conjunto.
+                        </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <img src="assets/images/onne1.jpg" alt="Onne"
                             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto about-value"
                             width="250" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -140,7 +143,7 @@
                         <p class="lead">Propomos um desafio aos nossos clientes: elevar a sua afirmação no mercado e
                             promover a sua diferenciação face à atuação das empresas concorrentes, através de um
                             conjunto de alavancas, ou seja, crescer!<br>
-                            &nbsp;<br>
+                            <!-- &nbsp;<br>
                             &nbsp;&nbsp; &nbsp;•&nbsp;&nbsp; &nbsp;Foco na gestão dos projetos dos clientes, maximizando
                             os seus resultados;<br>
                             &nbsp;&nbsp; &nbsp;•&nbsp;&nbsp; &nbsp;Atuação diversificada em todo o mercado onde atua o
@@ -158,9 +161,9 @@
                             &nbsp;&nbsp; &nbsp;•&nbsp;&nbsp; &nbsp;Preocupação constante com a eficácia e a
                             eficiência;<br>
                             &nbsp;&nbsp; &nbsp;•&nbsp;&nbsp; &nbsp;Elevada rede de contactos e facilidade na
-                            interlocução com as entidades oficiais.</p>
+                            interlocução com as entidades oficiais.</p> -->
                     </div>
-                    <div class="col-md-4 order-md-1">
+                    <div class="col-md-3 order-md-1">
                         <img src="assets/images/onne2.jpg" alt="Prova de valor"
                             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto about-value"
                             width="250" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -171,7 +174,24 @@
             </div>
         </section>
 
-        <!--Testimonials-->
+        <!--Subscription-->
+        <!-- <section id="cta">
+            <div class="text-secondary px-2 py-2 text-center cta">
+                <div class="py-5">
+                    <h1 class="display-5 fw-bold text-white">Desperte a revolução no seu negócio.</h1>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="fs-5 mb-4 text-white">As vagas são limitadas!</p>
+
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <a href="./views/subscription.php"
+                                class="btn btn-outline-info btn-lg px-4 me-sm-3  fw-bold">Fale conosco!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!--Testemunhos-->
         <section class="testimonials">
             <div id="testimonials">
                 <h2 class="title">Testemunhos</h2>
@@ -183,21 +203,21 @@
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" 
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" 
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" 
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
                         aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" 
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
                         aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" 
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6"
                         aria-label="Slide 7"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" 
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7"
                         aria-label="Slide 8"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" 
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8"
                         aria-label="Slide 9"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" 
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9"
                         aria-label="Slide 10"></button>
                 </div>
                 <div class="carousel-inner">
@@ -401,84 +421,36 @@
             </div>
         </section>
 
-        <!--Speakers-->
-        <section class="speakers">
-            <div id="speakers">
-                <h2 class="title">Palestrantes</h2>
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-4">
-                    <div class="circle-img">
-                        <img class="bd-placeholder-img rounded-circle"
-                            src="assets/images/GrantCardone.jpg"
-                            alt="Grant Cardone">
+        <!--Contacto-->
+        <h2 class="title">Contacto </h2>
+        <div class="contact_conteudo">
+            <section class="container">
+                <form class="form">
+                    <div class="descr">Fale conosco aqui</div>
+                    <div class="input">
+                        <input required="" autocomplete="off" type="text">
+                        <label for="name">Nome</label>
                     </div>
-                    <h2 class="fw-normal">Grant Cardone</h2>
-                    <p>Grant Cardone é um dos palestrantes motivacionais mais bem pagos no mundo. Autor de
-                        diversos
-                        best-sellers, como Venda ou Seja Vendido, Cardone sempre passa para os expectadores
-                        de suas
-                        conferências
-                        que o sucesso não é uma coincidência. Ele depende de muito trabalho duro, todos os
-                        dias.</p>
-                    <p><a class="btn btn-secondary" href="">Ver detalhes &raquo;</a></p>
-                </div>
 
-                <div class="col-lg-4">
-                    <div class="circle-img">
-                        <img class="bd-placeholder-img rounded-circle"
-                            src="assets/images/JeffreyGitomer.png"
-                            alt="Jeffrey Gitomer">
+                    <div class="input">
+                        <input required="" autocomplete="off" name="email" type="text">
+                        <label for="email">E-mail</label>
                     </div>
-                    <h2 class="fw-normal">Jeffrey Gitomer</h2>
-                    <p>Jeffrey Gitomer autor de 15 livros, é dele uma das obras
-                        mais importantes do ramo de vendas, o best-seller A Bíblia das Vendas. Gitomer é
-                        especialista em
-                        treinamento e
-                        convenções de vendas e anualmente conduz mais de 150 programas em grandes empresas
-                        como IBM,
-                        Coca-Cola,
-                        AT&T, Hilton Hotels, Siemens e Cintas.</p>
-                    <p><a class="btn btn-secondary" href="#">Ver detalhes &raquo;</a></p>
-                </div>
 
-                <div class="col-lg-4">
-                    <div class="circle-img">
-                        <img class="bd-placeholder-img rounded-circle"
-                            src="assets/images/TonyRobbins.png"
-                            alt="Tony Robbins ">
+                    <div class="input">
+                        <input required="" autocomplete="off" name="telefone" type="text">
+                        <label for="telefone">Telefone</label>
                     </div>
-                    <h2 class="fw-normal">Tony Robbins </h2>
-                    <p>Tony Robbins é considerado o melhor palestrante motivacional do mundo. É conhecido
-                        por transformar a
-                        motivação de pessoas em obra de arte. Autor de muitos best-sellers de
-                        autoajuda como Desperte O Seu Gigante Interior. Seu grande lema é “Estabelecer metas
-                        é o primeiro
-                        passo
-                        para transformar o invisível no visível”.</p>
-                    <p><a class="btn btn-secondary" href="">Ver detalhes &raquo;</a></p>
-                </div>
-            </div>
-        </section>
 
-        <!--Subscription-->
-        <section id="cta">
-            <div class="text-secondary px-2 py-2 text-center cta">
-                <div class="py-5">
-                    <h1 class="display-5 fw-bold text-white">Desperte a revolução no seu negócio.</h1>
-                    <div class="col-lg-6 mx-auto">
-                        <p class="fs-5 mb-4 text-white">As vagas são limitadas!</p>
-
-                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                            <a href="./views/subscription.php" class="btn btn-outline-info btn-lg px-4 me-sm-3  fw-bold">Inscreva-se
-                                já!</a>
-                        </div>
+                    <div class="input">
+                        <textarea required="" cols="30" rows="1" id="message"></textarea>
+                        <label for="message">Mensagem</label>
                     </div>
-                </div>
-            </div>
-        </section>
+                    <button>Enviar →</button>
+                </form>
+            </section>
+            <img class="contact_imagem" src="./assets/images/contact.jpg" alt="Imagem de simulação de contacto">
+        </div>
     </main>
 
     <!--Footer-->
@@ -520,7 +492,7 @@
                 <li><i class="fa-regular fa-envelope"></i>
                     <a href="#" class="footer-link">geral@onne.pt</a>
                 </li>
-                <li><i class="fa-regular fa-envelope"></i>
+                <!-- <li><i class="fa-regular fa-envelope"></i>
                     <a href="#" class="footer-link">consulting@onne.pt</a>
                 </li>
                 <li><i class="fa-regular fa-envelope"></i>
@@ -528,7 +500,7 @@
                 </li>
                 <li><i class="fa-regular fa-envelope"></i>
                     <a href="#" class="footer-link">training@onne.pt</a>
-                </li>
+                </li> -->
                 <li>
                     <i class="fas fa-phone"></i>
                     <a href="#" class="footer-link">22 371 07 88</a>
@@ -540,7 +512,7 @@
                 <form action="./views/newsletter.php" method="get" id="footer-subscribe">
                     <h3>Newsletter</h3>
                     <p>
-                        Inscreva-se na nossa newsletter e receba as nossas novidades.
+                        Inscreva-se na nossa newsletter.
                     </p>
                     <div id="input-group">
                         <input type="text" name="email" placeholder="E-mail" required>
