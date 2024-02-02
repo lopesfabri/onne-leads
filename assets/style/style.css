@@ -101,7 +101,6 @@ _____________________________________*/
   height: 100%;
   background: rgba(30, 6, 38, 0.6);
   z-index: 1;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -269,20 +268,6 @@ _____________________________________*/
 }
 
 .botao__fale__conosco {
-  /* display: flex;
-  justify-content: center;
-  border: 2px solid rgb(174, 106, 255);
-  border-radius: 8px;
-  width:20%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 300;
-  font-family: "Krub", "Segoe UI", sans-serif;
-  padding: 10px;
-  margin:10px;
-  text-decoration: none;
-  color: #fff; */
-
   /* margin: 0 auto; */
   position: relative;
   padding: 25px;
@@ -344,249 +329,112 @@ _____________________________________*/
   transition: box-shadow 0.2s ease-in;
 }
 
+/*___________________________________
+              
+* SERVIÇOS *
+_____________________________________*/
+#servicos {
+  padding-bottom: 2%;
+}
 
-/* form {
+.servicos {
+  padding: 10%;
+
+}
+.servicos__container {
   display: flex;
-  flex-direction: column;
+  gap: 40px;
+}
+
+.servico {
+  position: relative;
+  width: 600px;
+  height: 100%;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  /* flex-direction: column; */
   align-items: center;
-  width: 50%;
-  margin: 0 auto;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.form-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.servico sgv {
   width: 100%;
-  margin: 10px 0;
-  gap: 20px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.form-control {
-  position: relative;
-  margin: 20px 0;
-  width: 200px;
-  background-color: transparent;
-  border: 0;
+.servico:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
-.form-control input {
-  background-color: transparent;
-  border: 0;
-  border-bottom: 2px #fff solid;
-  display: block;
-  width: 100%;
-  padding: 12px 0;
-  font-size: 18px;
-  color: #fff;
-  transition: border-bottom-color 0.3s ease;
-}
-
-.form-control input:focus,
-.form-control input:valid {
-  outline: 0;
-  border-bottom-color: rgb(174, 106, 255);
-}
-
-.form-control label {
+.servico__content {
   position: absolute;
-  top: 15px;
+  top: 0;
   left: 0;
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.form-control label span {
-  display: inline-block;
-  font-size: 18px;
-  min-width: 7px;
-  color: #fff;
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  font-family: "Krub", "Segoe UI", sans-serif;
-  font-weight: 400;
+.servico:hover .servico__content {
+  transform: rotateX(0deg);
 }
 
-.form-control input:focus + label span,
-.form-control input:valid + label span {
-  color: rgb(174, 106, 255);
-  transform: translateY(-30px);
-}
-
-#send button {
+.servico__title {
   margin: 0 auto;
-  position: relative;
-  padding: 10px 20px;
-  border-radius: 7px;
-  border: 1px solid rgb(174, 106, 255);
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  background: transparent;
-  color: #fff;
-  overflow: hidden;
-  cursor: pointer;
-  transition: background 0.2s ease-out, box-shadow 0.2s ease-in;
+  padding: 15px;
 }
 
-.btn-secondary {
-  margin: 0 auto;
-  position: relative;
-  padding: 10px 4px;
-  border-radius: 5px;
-  border: 2px solid #1e0626;
-  font-size: 10px;
-  text-transform: uppercase;
-  font-weight: 600;
+.servico:hover svg {
+  scale: 0;
+}
+
+.servico__description {
+  margin: 10px 0 0;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Krub", sans-serif;
   letter-spacing: 1px;
-  background: transparent;
-  color: #000;
-  overflow: hidden;
-  cursor: pointer;
-  transition: background 0.2s ease-out, box-shadow 0.2s ease-in;
+  text-align: center;
+  color: #777;
+
 }
 
-#send button:hover {
-  background: rgb(174, 106, 255);
-}
-
-.btn-secondary:hover {
-  background: #1e0626;
-}
-
-#send button:hover::before,
-.btn-secondary:hover::before {
-  animation: sh02 0.5s 0s linear;
-}
-
-#send button::before,
-.btn-secondary::before {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 86%;
-  position: absolute;
-  top: 7%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  transform: skewX(-20deg);
-}
-
-@keyframes sh02 {
-  from {
-    opacity: 0;
-    left: 0%;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    left: 100%;
-  }
-}
-
-#send button:active,
-.btn-secondary:active {
-  box-shadow: 0 0 0 0 transparent;
-  transition: box-shadow 0.2s ease-in;
-} */
 
 /*___________________________________
               
-* ABOUT *
+* BANNER *
 _____________________________________*/
-#about {
-  max-width: 100%;
-  padding-top: 100px;
-  padding-bottom: 30px;
-  margin-left: 0.8rem;
+#banner {
+  padding-bottom: 6%;
 }
 
-.about-us {
-  animation-name: HeaderH1-moveToTheRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
+.banner {
 
-.lead {
-  max-width: 90%;
-  margin: auto;
-  color: #000;
-  font-size: max(16px, 1vw);
-}
-
-.proof-value {
-  animation-name: HeaderH2-moveToTheLeft;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: backwards;
-}
-
-.about-value {
-  width: 80%;
-  border: 2px solid;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 10px 10px 5px 0px #888888;
-}
-
-/*__________________
-/*Animation About */
-@keyframes HeaderH1-moveToTheRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-75px);
-  }
-  70% {
-    transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes HeaderH2-moveToTheLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  70% {
-    transform: translateX(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/*___________________________________
-
-
-/*___________________________________
-
-* SUBSCRIPTION *
-_____________________________________*/
-/* .cta {
   background-color: #1e0626;
   border-top: 10px solid #000;
   border-bottom: 10px solid #000;
-  margin-top: 50px;
-} */
+  margin-bottom: 100px;
+  margin-top: -150px;
+}
 
 
 /*___________________________________
               
 * TESTIMONIALS *
 _____________________________________*/
-#testimonials {
-  margin-top: 50px;
+.testimonials {
+  padding-bottom: 5%;
 }
 
 #carouselExampleDark {
@@ -594,7 +442,7 @@ _____________________________________*/
 }
 
 .carousel {
-  margin-bottom: 12rem;
+  margin-bottom: 5rem;
 }
 
 .carousel-caption {
@@ -622,9 +470,10 @@ _____________________________________*/
 }
 
 .carousel-caption p {
-  font-weight: 100;
+  font-weight: 400;
   color: #000;
-  font-size: 18px;
+  font-size: 22px;
+  font-family: "Krub", sans-serif;
 }
 
 span {
@@ -637,66 +486,54 @@ span {
 }
 
 /*___________________________________
-              
-* BANNER *
-_____________________________________*/
-.banner {
-  background-color: #1e0626;
-  border-top: 10px solid #000;
-  border-bottom: 10px solid #000;
-  margin-bottom: 100px;
-  margin-top: -150px;
-}
-
-
-/*___________________________________
 
 * Contacto *
 _____________________________________*/
+#contacto {
+  padding-top: 50px;
+}
 
 .contact_conteudo {
-  padding: 5% 15%; 
+  padding: 5% 10%;
   display: flex;
-  
   align-items: center;
-  /* gap: 50px; */
 }
 
 .container {
-
-
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-  border: 2px solid #1e0626;
+  border-radius: 5px 0px 5px 5px;
   background: linear-gradient(to right, #1e0626, #62197a);
-  box-shadow: 10px 10px 5px 0px #888888;
-  
+  box-shadow: 0px -10px 10px 0px #888888;
 }
+
 
 .container form .descr {
   font-size: 25px;
   font-weight: 500;
   color: #e8e8e8;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin-bottom: 2px;
+  margin-top: 30px;
   text-align: center;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 
-.input, textarea {
+.input,
+textarea {
   margin: 1em 0 1em 0;
   width: 500px;
   position: relative;
+ 
 }
 
-.input input, textarea {
+.input input,
+textarea {
   font-size: 100%;
   padding: 0.7em;
   outline: none;
@@ -708,21 +545,26 @@ _____________________________________*/
   width: 100%;
   resize: none;
 }
+#message {
+  padding: 2px;
+  border-radius: 5px;
+  border: 2px solid #e8e8e8; 
+}
 
 .input label {
   font-size: 100%;
   position: absolute;
   left: 0;
   color: #e8e8e8;
-  padding: 0.7em;
+  padding:1em;
   margin-left: 0.1em;
   pointer-events: none;
   transition: all 0.5s ease;
   text-transform: uppercase;
 }
 
-.input :is(input:focus, input:valid)~label {
-  transform: translateY(-50%) scale(.9);
+.input :is(input:focus, input:valid) ~ label {
+  transform: translateY(-50%) scale(0.9);
   margin: 0em;
   padding: 0.4em;
   background: transparent;
@@ -730,7 +572,7 @@ _____________________________________*/
 
 .input textarea:focus ~ label,
 .input textarea:valid ~ label {
-  transform: translateY(-50%) scale(.9);
+  transform: translateY(-50%) scale(0.9);
   margin: 0em;
   padding: 0.4em;
   background: transparent;
@@ -778,11 +620,14 @@ _____________________________________*/
 }
 
 .contact_imagem {
-  width: 50%;
-  border-radius: 5px;
-  box-shadow: 10px 10px 5px 0px #888888;
-}
+  width: 55%;
+  max-width: 100%; /* Adicionado para tornar a imagem responsiva */
+  height: auto;
 
+  border-radius: 5px;
+  border-radius: 5px 5px 5px 0px;
+  box-shadow: 0px -10px 10px 0px #888888;
+}
 
 /*___________________________________
 
@@ -1012,9 +857,6 @@ footer {
     font-size: 18px;
   }
 
-  form {
-    width: 95%;
-  }
 
   .card p {
     font-size: 15px;
@@ -1031,57 +873,40 @@ footer {
     height: 70px;
   }
 
-  .form-control label span {
-    font-size: 18px;
-  }
-
   /*__________________
   
-  * ABOUT *
+  * SERVIÇOS *
   ____________________*/
-  #about {
+  /* #about {
     padding-top: 50px;
   }
 
   .lead {
     max-width: 75%;
     margin-bottom: 20px;
+    font-size: 120px;
+    font-family: "Krub", sans-serif;
   }
 
   .about-value {
     width: 60%;
-  }
+  } */
 
-  /*_____________________
-   
-  * SUBSCRIPTION *
+/*_____________________
+  
+  * BANNER *
   _______________________*/
-  .cta {
-    padding: 2rem;
-  }
-
-  .cta h1 {
-    font-size: 1.5rem;
-  }
-
-  .cta p {
-    font-size: 1rem;
-  }
-
-  .btn {
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 12px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  .btn-secondary {
-    padding: 8px 4px;
-    font-size: 10px;
-  }
-
+  .banner {
+    padding: 0.5rem; 
+   }
+  
+   .banner h1 {
+    font-size: 2rem; 
+   }
+  
+   .banner p {
+    font-size: 1rem; /
+   }
   /*____________________
    
   * TESTIMONIALS *
@@ -1106,21 +931,7 @@ footer {
     font-weight: 800;
   }
 
-  /*_____________________
-  
-  * BANNER *
-  _______________________*/
-  /* .banner {
-  padding: 0.5rem; 
- }
 
- .banner h1 {
-  font-size: 2rem; 
- }
-
- .banner p {
-  font-size: 1rem; /
- } */
 
   /*_____________________
    
@@ -1160,15 +971,6 @@ footer {
     padding: 0 20px 0 20px;
   }
 
-  form {
-    width: 80%;
-  }
-
-  fieldset {
-    border: none;
-    padding-bottom: 70px;
-    margin: 0 auto;
-  }
 
   .cards {
     flex-direction: column;
@@ -1180,9 +982,6 @@ footer {
     width: 50%;
   }
 
-  .form-control label span {
-    font-size: 14px;
-  }
 
   /* BANNER */
   .banner h1 {
@@ -1190,13 +989,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  /* SUBSCRIPTION */
-  .cta h1 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-
-  /* FOOTER */
+   /* FOOTER */
   .footer-contacts p {
     font-size: 16px;
   }
