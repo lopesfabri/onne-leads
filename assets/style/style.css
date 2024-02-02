@@ -335,13 +335,11 @@ _____________________________________*/
 _____________________________________*/
 .servicos {
   padding: 14% 7%;
-
 }
 
 #servicos {
   padding: 4%;
 }
-
 
 .servicos__container {
   display: flex;
@@ -354,7 +352,6 @@ _____________________________________*/
   height: 100%;
   background-color: #f2f2f2;
   border-radius: 10px;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -409,15 +406,13 @@ _____________________________________*/
 
 .servico__description {
   /* margin: 10px 0 0; */
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   font-family: "Krub", sans-serif;
   letter-spacing: 1px;
   text-align: center;
   color: #777;
-
 }
-
 
 /*___________________________________
               
@@ -428,7 +423,6 @@ _____________________________________*/
 }
 
 .banner {
-
   background-color: #1e0626;
   border-top: 10px solid #000;
   border-bottom: 10px solid #000;
@@ -436,13 +430,12 @@ _____________________________________*/
   margin-top: -150px;
 }
 
-
 /*___________________________________
               
 * TESTIMONIALS *
 _____________________________________*/
 .testimonials {
-  padding: 10% 5%;
+  padding: 5%;
 }
 
 #carouselExampleDark {
@@ -470,7 +463,7 @@ _____________________________________*/
   color: #000;
   margin-bottom: 10px;
   font-weight: 500;
-  font-size:24px;
+  font-size: 24px;
 }
 
 .carousel-caption h5 {
@@ -499,11 +492,11 @@ span {
 * Contacto *
 _____________________________________*/
 #contacto {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .contact_conteudo {
-  padding: 2% 10%;
+  padding: 5% 10%;
   display: flex;
   /* gap: 82px;  */
 }
@@ -517,7 +510,6 @@ _____________________________________*/
   background: linear-gradient(to right, #1e0626, #62197a);
   box-shadow: 0px -10px 10px 0px #888888;
 }
-
 
 .container form .descr {
   font-size: 25px;
@@ -538,7 +530,6 @@ textarea {
   margin: 1em 0 1em 0;
   width: 500px;
   position: relative;
- 
 }
 
 .input input,
@@ -557,7 +548,7 @@ textarea {
 #message {
   padding: 2px;
   border-radius: 5px;
-  border: 2px solid #e8e8e8; 
+  border: 2px solid #e8e8e8;
 }
 
 .input label {
@@ -565,7 +556,7 @@ textarea {
   position: absolute;
   left: 0;
   color: #e8e8e8;
-  padding:1em;
+  padding: 1em;
   margin-left: 0.1em;
   pointer-events: none;
   transition: all 0.5s ease;
@@ -801,15 +792,15 @@ footer {
 /* Link to the top */
 .link-top {
   text-decoration: none;
-  padding: 5px;
+  padding: 50px;
   position: fixed;
-  right: 50px;
+  right: 5px;
   bottom: 1px;
 }
 
 .link-top i {
   font-size: 2rem;
-  color: rgb(174, 106, 255);
+  color: #7f37c9;
 }
 
 /*____________*/
@@ -827,198 +818,54 @@ footer {
   * RESPONSIVE TO MOBILE *
   _______________________*/
 
+@media screen and (max-width: 1300px) {
+  .servicos {
+    padding: 14% 2%;
+  }
+
+  #servicos {
+    padding: 2%;
+  }
+
+  .servicos__container {
+    padding: 5%;
+    font-size: 16px;
+    flex-direction: column;
+  }
+
+  .servico__description {
+    font-size: 11px;
+  }
+  .input,
+  textarea {
+    width: 350px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
-  .logo {
-    max-width: 80%;
-  }
-
   #content h1 {
-    padding: 20px;
-    margin-top: 100px;
-    font-size: 1px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  /*_________           
-  * HEADER */
-  .logo {
-    top: 10px;
-  }
-
-  #content {
-    padding: 40px;
-  }
-
-  #content h1 {
-    font-size: 32px;
-    margin-top: 110px;
+    margin-top: 1rem;
+    font-size: 50px;
+    margin-top: 10rem;
   }
 
   #content h2 {
-    font-size: 16px;
+    font-size: 24px;
   }
 
-  #content p {
-    font-size: 18px;
+  .card {
+    width: 160px;
   }
 
-
-  .card p {
-    font-size: 15px;
+  .servicos__container {
+    align-items: center;
   }
 
-  .cards {
-    flex-direction: column;
-    gap: 50px;
-    padding: 20px;
-  }
-
-  .cards .card {
-    width: 180px;
-    height: 70px;
-  }
-
-  /*__________________
-  
-  * SERVIÇOS *
-  ____________________*/
-  /* #about {
-    padding-top: 50px;
-  }
-
-  .lead {
-    max-width: 75%;
-    margin-bottom: 20px;
-    font-size: 120px;
-    font-family: "Krub", sans-serif;
-  }
-
-  .about-value {
-    width: 60%;
-  } */
-
-/*_____________________
-  
-  * BANNER *
-  _______________________*/
-  .banner {
-    padding: 0.5rem; 
-   }
-  
-   .banner h1 {
-    font-size: 2rem; 
-   }
-  
-   .banner p {
-    font-size: 1rem; /
-   }
-  /*____________________
-   
-  * TESTIMONIALS *
-  _____________________*/
-  .carousel-caption h4 {
-    font-size: 18px;
-    margin-bottom: 3px;
-  }
-
-  .carousel-caption h5 {
-    font-size: 14px;
-    margin-top: 6px;
-  }
-
-  .carousel-caption p {
-    font-size: 13px;
-    margin-bottom: 10px;
-  }
-
-  .carousel-caption span {
-    font-size: 16px;
-    font-weight: 800;
-  }
-
-
-
-  /*_____________________
-   
-  * FOOTER *
-  _______________________*/
-  .footer-content {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+  .servico {
+    width: 400px;
   }
 }
 
-/*________________________________________*/
-@media screen and (max-width: 430px) {
-  /* HEADER */
-  .logo {
-    max-width: 50%;
-    top: 30px;
-  }
-
-  #content {
-    padding: 20px;
-  }
-
-  #content h1 {
-    font-size: 28px;
-    padding-top: 30px;
-  }
-
-  #content h2 {
-    font-size: 14px;
-    padding: 0 30px 0 30px;
-  }
-
-  p {
-    font-size: 12px;
-    font-weight: 500;
-    padding: 0 20px 0 20px;
-  }
-
-
-  .cards {
-    flex-direction: column;
-    gap: 15px;
-    padding: 5px;
-  }
-
-  .cards .card {
-    width: 50%;
-  }
-
-
-  /* BANNER */
-  .banner h1 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-
-   /* FOOTER */
-  .footer-contacts p {
-    font-size: 16px;
-  }
-}
-
-/*___________________________________*/
-@media screen and (max-width: 390px) {
-  /* HEADER */
-  .logo {
-    top: 10px;
-  }
-
-  #content h1 {
-    font-size: 20px;
-    padding-top: 4rem;
-  }
-
-  .cards .card {
-    height: auto;
-  }
-
-  /* TESTIMONIALS */
-  .carousel-item {
-    height: 26rem;
-  }
+.link-top {
+  padding: 5px;
 }
