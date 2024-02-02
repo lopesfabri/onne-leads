@@ -160,6 +160,7 @@ _____________________________________*/
   z-index: 1;
   font-weight: 300;
   font-size: 17px;
+  text-align: center;
   font-family: "Krub", "Segoe UI", sans-serif;
   text-transform: uppercase;
   color: #fff;
@@ -497,7 +498,9 @@ _____________________________________*/
 
 .contact_conteudo {
   padding: 5% 10%;
+
   display: flex;
+
   /* gap: 82px;  */
 }
 
@@ -836,6 +839,7 @@ footer {
   .servico__description {
     font-size: 11px;
   }
+  
   .input,
   textarea {
     width: 350px;
@@ -864,8 +868,71 @@ footer {
   .servico {
     width: 400px;
   }
+
+  .contact_conteudo {
+    padding: 5%;
+  }
+
+  .link-top {
+    padding: 5px;
+  }
 }
 
-.link-top {
-  padding: 5px;
+@media screen and (max-width: 880px) {
+  .logo {
+    margin-top: 6rem;
+  }
+
+  #content h1 {
+    font-size: 40px;
+  }
+
+  #content h2 {
+    font-size: 22px;
+  }
+
+  .card {
+    width: 180px;
+  }
+
+  .container {
+    width: 40%;
+  }
+
+  .input,
+  textarea {
+    width: 100%;
+  }
+
+  .contact_imagem {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #content h2 {
+    font-size: 20px;
+  }
+
+  .cards {
+margin: 0% 5% 0% 5%;
+  }
+
+  .servicos__container {
+    padding-bottom: 10%;
+  }
+
+  .container {
+    width: 50%;
+  }
+  .contact_imagem {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .contact_imagem {
+    display: none;
+  }
 }
