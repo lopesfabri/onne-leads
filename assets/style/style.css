@@ -114,6 +114,7 @@ _____________________________________*/
 }
 
 #content h1 {
+  padding-top: 1rem; /*acrescentei aqui*/
   font-size: 60px;
   font-family: inherit;
   color: #fff;
@@ -1132,7 +1133,7 @@ _______________________*/
 
   #content h1 {
     font-size: 20px;
-    padding-top: 4rem;
+    padding-top: 3rem; /*mudei aqui de 4*/
   }
 
   .cards .card {
