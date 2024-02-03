@@ -271,7 +271,7 @@ _____________________________________*/
 .botao__fale__conosco {
   /* margin: 0 auto; */
   position: relative;
-  padding: 25px;
+  padding: 15px;
   border-radius: 7px;
   border: 1px solid rgb(174, 106, 255);
   font-size: 14px;
@@ -334,13 +334,16 @@ _____________________________________*/
               
 * SERVIÇOS *
 _____________________________________*/
-.servicos {
-  padding: 14% 7%;
-}
 
 #servicos {
-  padding: 4%;
+  padding: 5%;
 }
+
+.servicos {
+  padding: 14% 10%;
+}
+
+
 
 .servicos__container {
   display: flex;
@@ -464,7 +467,7 @@ _____________________________________*/
   color: #000;
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .carousel-caption h5 {
@@ -475,7 +478,7 @@ _____________________________________*/
 .carousel-caption p {
   font-weight: 400;
   color: #000;
-  font-size: 22px;
+  font-size: 24px;
   font-family: "Krub", sans-serif;
 }
 
@@ -498,10 +501,7 @@ _____________________________________*/
 
 .contact_conteudo {
   padding: 5% 10%;
-
   display: flex;
-
-  /* gap: 82px;  */
 }
 
 .container {
@@ -518,7 +518,7 @@ _____________________________________*/
   font-size: 25px;
   font-weight: 500;
   color: #e8e8e8;
-  /* margin-bottom: 2px; */
+  margin-bottom: 2px;
   margin-top: 30px;
   text-align: center;
 }
@@ -795,7 +795,7 @@ footer {
 /* Link to the top */
 .link-top {
   text-decoration: none;
-  padding: 50px;
+  padding: 20px;
   position: fixed;
   right: 5px;
   bottom: 1px;
@@ -822,6 +822,9 @@ footer {
   _______________________*/
 
 @media screen and (max-width: 1300px) {
+  .logo {
+    top: 0.75rem;
+  }
   .servicos {
     padding: 14% 2%;
   }
@@ -831,37 +834,8 @@ footer {
   }
 
   .servicos__container {
-    padding: 5%;
-    font-size: 16px;
+    padding: 10%;
     flex-direction: column;
-  }
-
-  .servico__description {
-    font-size: 11px;
-  }
-  
-  .input,
-  textarea {
-    width: 350px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #content h1 {
-    margin-top: 1rem;
-    font-size: 50px;
-    margin-top: 10rem;
-  }
-
-  #content h2 {
-    font-size: 24px;
-  }
-
-  .card {
-    width: 160px;
-  }
-
-  .servicos__container {
     align-items: center;
   }
 
@@ -869,22 +843,31 @@ footer {
     width: 400px;
   }
 
-  .contact_conteudo {
-    padding: 5%;
+  .servico__description {
+    font-size: 16px;
   }
 
-  .link-top {
-    padding: 5px;
+  .carousel-caption p {
+    font-size: 18px;
+  }
+
+  .input,
+  textarea {
+    width: 350px;
   }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1024px) {
   .logo {
-    margin-top: 6rem;
+    top: 6rem;
+  }
+
+  #content {
+    padding: 20px;
   }
 
   #content h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   #content h2 {
@@ -895,34 +878,123 @@ footer {
     width: 180px;
   }
 
-  .container {
-    width: 40%;
+  .servico {
+    width: 400px;
+  }
+
+  .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .contact_conteudo {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  #content h1 {
+    font-size: 40px;
+  }
+
+  #content h2 {
+    font-size: 22px;
+  }
+
+  .cards {
+    gap: 10px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
   }
 
   .input,
   textarea {
+    margin: 0.5em 0 0.5em 0;
     width: 100%;
   }
 
-  .contact_imagem {
-    width: 60%;
+  .form button {
+    padding: 0.5em;
+    margin-bottom: 5px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .logo {
+    top: 3rem;
+  }
+
+  #content {
+    padding: 20px;
+  }
+
+  #content h1 {
+    font-size: 35px;
+    margin-top: 110px;
+  }
 
   #content h2 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  #content p {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 15px;
   }
 
   .cards {
-margin: 0% 5% 0% 5%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .cards .card {
+    width: 200px;
+    height: 70px;
+  }
+
+  .servico {
+    width: 380px;
   }
 
   .servicos__container {
-    padding-bottom: 10%;
+    padding-bottom: 20%;
   }
 
+  .servico__description {
+    font-size: 14px;
+  }
+
+  .contact_conteudo {
+    padding: 2%;
+  }
+
+  .footer-content {
+    padding: 2rem;
+  }
+
+  .footer-contacts,
+  .footer-list,
+  #footer-subscribe {
+    padding: 0.5rem;
+  }
+
+  #input-group input {
+    padding: 6px;
+  }
+
+  #input-group button {
+    padding: 6px;
+  }
+
+  /*_____________________
+  
+  * CONTACTO *
+_______________________*/
   .container {
     width: 50%;
   }
@@ -931,8 +1003,144 @@ margin: 0% 5% 0% 5%;
   }
 }
 
+
+@media screen and (max-width: 660px) {
+    .logo {
+      top: 1rem;
+    }
+
+ /* FOOTER*/
+ .footer-content {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+}
+ 
+
 @media screen and (max-width: 430px) {
+  /* HEADER */
+  .logo {
+    max-width: 50%;
+    top: 30px;
+  }
+
+  #content {
+    padding: 20px;
+  }
+
+  #content h1 {
+    font-size: 28px;
+    padding-top: 30px;
+  }
+
+  #content h2 {
+    font-size: 14px;
+    padding: 0 30px 0 30px;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 20px 0 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+  }
+
+  .cards .card {
+    width: 50%;
+  }
+
+    /*_____________________
+  
+  * SERVIÇOS *
+  _______________________*/
+
+  .servicos__container {
+    padding-bottom: 30%;
+  }
+
+  /*_____________________
+  
+  * TESTIMONIALS *
+  _______________________*/
+
+  .carousel-caption h4 {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 12px;
+  }
+
+  .carousel-caption p {
+    font-size: 12px;
+    font-weight: 400;
+ 
+  }
+
+  .carousel-caption span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+ 
+  /*_____________________
+  
+  * CONTACTO *
+  _______________________*/
+  .container {
+    width: 100%;
+  }
+
   .contact_imagem {
     display: none;
+  }
+
+  /* FOOTER*/
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  #input-group input {
+    padding: 14px;
+  }
+
+  #input-group button {
+    padding: 14px;
+  }
+
+  .link-top {
+    padding: 10px;
+  }
+
+  .link-top i {
+    font-size: 1.5rem;
+  }
+}
+
+/*___________________________________*/
+@media screen and (max-width: 390px) {
+  /* HEADER */
+  .logo {
+    top: 10px;
+  }
+
+  #content h1 {
+    font-size: 20px;
+    padding-top: 4rem;
+  }
+
+  .cards .card {
+    height: auto;
+  }
+
+  /* TESTIMONIALS */
+  .carousel-item {
+    height: 26rem;
   }
 }
