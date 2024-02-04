@@ -114,7 +114,7 @@ _____________________________________*/
 }
 
 #content h1 {
-  padding-top: 1rem; /*acrescentei aqui*/
+ 
   font-size: 60px;
   font-family: inherit;
   color: #fff;
@@ -549,7 +549,8 @@ textarea {
   width: 100%;
   resize: none;
 }
-#message {
+
+.campo_message {
   padding: 2px;
   border-radius: 5px;
   border: 2px solid #e8e8e8;
@@ -586,11 +587,11 @@ textarea {
   border-color: rgb(174, 106, 255);
 }
 
-.form button {
+.form .button_send {
   color: #e8e8e8;
   font-size: 20px;
   align-self: flex-start;
-  padding: 1em;
+  padding: .75em;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -601,7 +602,7 @@ textarea {
   overflow: hidden;
 }
 
-.form button:before {
+.form .button_send:before {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -613,11 +614,11 @@ textarea {
   transition: opacity 0.3s ease-in-out;
 }
 
-.form button:hover:before {
+.form .button_send:hover:before {
   opacity: 0.2;
 }
 
-.form button:hover {
+.form .button_send:hover {
   transform: translateY(-3px);
   background-color: #62197a;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);

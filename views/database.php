@@ -3,7 +3,7 @@
     $dbHost = 'localhost';
     $dbUsername = 'root';
     $dbPassword = '';
-    $dbName = 'onne';
+    $dbName = 'registos_leads';
 
     $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName); //object format
 

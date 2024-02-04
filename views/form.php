@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Inscrição</title>
-    <link rel="stylesheet" href="../assets/style/form.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Inscrição</title>
+  <link rel="stylesheet" href="../assets/style/form.css">
 </head>
 <body>
+  
+  <?php
+    if (isset($_POST['submit'])) {
+      include_once('database.php');
 
-<?php
-  if (isset($_POST['submit'])) {
-    include_once('database.php');
+      $nome = htmlspecialchars($_POST['nome']);
+      $email = htmlspecialchars($_POST['email']);
+      $telefone = htmlspecialchars($_POST['telefone']);
+      $mensagem = htmlspecialchars($_POST['mensagem']);
 
-    $email = htmlspecialchars($_POST['email']);
-    $nome = htmlspecialchars($_POST['nome']);
+      // Use prepared statement to avoid SQL injection
+      $stmt = mysqli_prepare($conexao, "SELECT 1 FROM leads WHERE email = ?");
+      mysqli_stmt_bind_param($stmt, 's', $email);
+      mysqli_stmt_execute($stmt);
+      mysqli_stmt_store_result($stmt);
 
-    // Use prepared statement to avoid SQL injection
-    $stmt = mysqli_prepare($conexao, "SELECT 1 FROM leads WHERE email = ?");
-    mysqli_stmt_bind_param($stmt, 's', $email);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_store_result($stmt);
+      $rowCount = mysqli_stmt_num_rows($stmt);
 
-    $rowCount = mysqli_stmt_num_rows($stmt);
-
-    if ($rowCount > 0) {
-        $errorMessage = " ";
-    } else {
-        $stmt = mysqli_prepare($conexao, "INSERT INTO leads(nome, email) VALUES (?, ?)");
-        mysqli_stmt_bind_param($stmt, 'ss', $nome, $email);
+      if ($rowCount > 0) {
+          $errorMessage = " ";
+      } else {
+        $stmt = mysqli_prepare($conexao, "INSERT INTO leads(nome, email, telefone, mensagem, data_hora) VALUES (?, ?, ?, ?, NOW())");
+        mysqli_stmt_bind_param($stmt, 'ssss', $nome, $email, $telefone, $mensagem);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
 
@@ -39,18 +41,17 @@
         echo "<p><a href='javascript:history.go(-1)'>Voltar</a></p>";
         echo "</section>";
         exit(); // Stop execution after displaying the success message
+     }
     }
-  }
-?>
-    <?php
-      if (isset($errorMessage)) {
-        echo "<header><h1>Email já cadastrado!</h1></header>";
-        echo "<section>";
-        echo "<p>Por favor, use um email diferente.</p>";
-        echo "<p><a href='javascript:history.go(-1)'>Voltar</a></p>";
-        echo "</section>";
-      }
-    ?>
-
+  ?>
+      <?php
+        if (isset($errorMessage)) {
+          echo "<header><h1>Email já cadastrado!</h1></header>";
+          echo "<section>";
+          echo "<p>Por favor, use um email diferente.</p>";
+          echo "<p><a href='javascript:history.go(-1)'>Voltar</a></p>";
+          echo "</section>";
+        }
+      ?>
 </body>
 </html>

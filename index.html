@@ -357,28 +357,28 @@
         <h2 id="contacto" class="title">Contacto </h2>
         <div class="contact_conteudo">
             <section class="container">
-                <form class="form">
+                <form class="form" action="./views/form.php" method="post">
                     <div class="descr">Fale conosco aqui</div>
                     <div class="input">
-                        <input required="" autocomplete="off" type="text">
+                        <input required autocomplete="off" type="text" name="nome" id="nome">
                         <label for="name">Nome</label>
                     </div>
 
                     <div class="input">
-                        <input required="" autocomplete="off" name="email" type="text">
+                        <input required="" autocomplete="off" name="email" id="email" type="text">
                         <label for="email">E-mail</label>
                     </div>
 
                     <div class="input">
-                        <input required="" autocomplete="off" name="telefone" type="text">
+                        <input required="" autocomplete="off" name="telefone" id="telefone" type="text">
                         <label for="telefone">Telefone</label>
                     </div>
 
                     <div class="input">
-                        <textarea required="" cols="30" rows="10" id="message"></textarea>
-                        <label for="message">Mensagem</label>
+                        <textarea class="campo_message" required="" cols="30" rows="10" name= mensagem id="mensagem"></textarea>
+                        <label  for="mensagem">Mensagem</label>
                     </div>
-                    <button>Enviar →</button>
+                    <input class="button_send" type="submit" name="submit" value="Enviar">Enviar →</input>
                 </form>
             </section>
             <img class="contact_imagem" src="./assets/images/contact.avif" alt="Imagem de simulação de contacto">
