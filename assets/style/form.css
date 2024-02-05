@@ -54,6 +54,7 @@ a {
   text-decoration: none;
   border-bottom: 0.5px dotted #372991;
   text-align: center;
+  align-items: center;
 }
 
 a:hover {

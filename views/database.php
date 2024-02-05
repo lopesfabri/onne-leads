@@ -14,4 +14,5 @@
     //     echo "Conexão efetuada com sucesso";
     // }
 
+    //$conexao->close();
 ?>
