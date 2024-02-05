@@ -114,7 +114,6 @@ _____________________________________*/
 }
 
 #content h1 {
- 
   font-size: 60px;
   font-family: inherit;
   color: #fff;
@@ -270,7 +269,6 @@ _____________________________________*/
 }
 
 .botao__fale__conosco {
-  /* margin: 0 auto; */
   position: relative;
   padding: 15px;
   border-radius: 7px;
@@ -341,10 +339,8 @@ _____________________________________*/
 }
 
 .servicos {
-  padding: 14% 10%;
+  padding: 15% 2%;
 }
-
-
 
 .servicos__container {
   display: flex;
@@ -410,8 +406,7 @@ _____________________________________*/
 }
 
 .servico__description {
-  /* margin: 10px 0 0; */
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
   font-family: "Krub", sans-serif;
   letter-spacing: 1px;
@@ -437,7 +432,7 @@ _____________________________________*/
 
 /*___________________________________
               
-* TESTIMONIALS *
+* TESTEMUNHOS *
 _____________________________________*/
 .testimonials {
   padding: 5%;
@@ -494,14 +489,11 @@ span {
 
 /*___________________________________
 
-* Contacto *
+* CONTACTO *
 _____________________________________*/
-#contacto {
-  padding-top: 50px;
-}
 
 .contact_conteudo {
-  padding: 5% 10%;
+  padding: 5% 8%;
   display: flex;
 }
 
@@ -591,7 +583,7 @@ textarea {
   color: #e8e8e8;
   font-size: 20px;
   align-self: flex-start;
-  padding: .75em;
+  padding: 0.75em;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -824,9 +816,18 @@ footer {
   _______________________*/
 
 @media screen and (max-width: 1300px) {
+  /*______________________
+   
+  * HEADER *
+  _______________________*/
   .logo {
     top: 0.75rem;
   }
+
+  /*______________________
+   
+  * SERVIÇOS *
+  _______________________*/
   .servicos {
     padding: 14% 2%;
   }
@@ -836,22 +837,25 @@ footer {
   }
 
   .servicos__container {
-    padding: 10%;
-    flex-direction: column;
-    align-items: center;
+    gap: 20px;
   }
 
   .servico {
-    width: 400px;
+    width: 500px;
   }
 
-  .servico__description {
-    font-size: 16px;
-  }
-
+  /*______________________
+   
+  * TESTEMUNHOS *
+  _______________________*/
   .carousel-caption p {
     font-size: 18px;
   }
+
+  /*______________________
+   
+  * CONTACTO *
+  _______________________*/
 
   .input,
   textarea {
@@ -859,7 +863,35 @@ footer {
   }
 }
 
+@media screen and (max-width: 1210px) {
+  /*______________________
+   
+  * SERVIÇOS *
+  _______________________*/
+  .servicos {
+    padding: 14% 2% 25% 2%;
+  }
+
+  .servicos__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .servico {
+    width: 400px;
+  }
+
+  .servico__description {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  /*______________________
+   
+  * HEADER *
+  _______________________*/
   .logo {
     top: 6rem;
   }
@@ -880,20 +912,28 @@ footer {
     width: 180px;
   }
 
-  .servico {
-    width: 400px;
-  }
-
+  /*______________________
+   
+  * TESTEMUNHOS *
+  _______________________*/
   .carousel-caption p {
     font-size: 16px;
   }
 
+  /*______________________
+   
+  * CONTACTO *
+  _______________________*/
   .contact_conteudo {
     padding: 5%;
   }
 }
 
 @media screen and (max-width: 880px) {
+  /*______________________
+   
+  * HEADER *
+  _______________________*/
   #content h1 {
     font-size: 40px;
   }
@@ -906,10 +946,18 @@ footer {
     gap: 10px;
   }
 
+  /*______________________
+   
+  * TESTEMUNHOS *
+  _______________________*/
   .carousel-caption p {
     font-size: 14px;
   }
 
+  /*______________________
+   
+  * CONTACTO *
+  _______________________*/
   .input,
   textarea {
     margin: 0.5em 0 0.5em 0;
@@ -923,6 +971,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  /*______________________
+   
+  * HEADER *
+  _______________________*/
   .logo {
     top: 3rem;
   }
@@ -959,6 +1011,11 @@ footer {
     height: 70px;
   }
 
+  /*______________________
+   
+  * SERVIÇOS *
+  _______________________*/
+
   .servico {
     width: 380px;
   }
@@ -967,14 +1024,21 @@ footer {
     padding-bottom: 20%;
   }
 
-  .servico__description {
-    font-size: 14px;
+  /*_____________________
+  
+  * CONTACTO *
+  _______________________*/
+  .container {
+    width: 50%;
+  }
+  .contact_imagem {
+    width: 50%;
   }
 
-  .contact_conteudo {
-    padding: 2%;
-  }
-
+  /*______________________
+   
+  * FOOTER *
+  _______________________*/
   .footer-content {
     padding: 2rem;
   }
@@ -992,35 +1056,44 @@ footer {
   #input-group button {
     padding: 6px;
   }
-
-  /*_____________________
+}
   
-  * CONTACTO *
-_______________________*/
-  .container {
-    width: 50%;
-  }
-  .contact_imagem {
-    width: 50%;
-  }
-}
-
-
 @media screen and (max-width: 660px) {
-    .logo {
-      top: 1rem;
-    }
+  /*______________________
+   
+  * HEADER *
+  _______________________*/
+  .logo {
+    top: 1rem;
+  }
 
- /* FOOTER*/
- .footer-content {
-  grid-template-columns: repeat(1, 1fr);
-  gap: 40px;
+   /*______________________
+   
+  * CONTACT *
+  _______________________*/
+  .container {
+    width: 100%;
+  }
+
+  .contact_imagem {
+  display: none;
+  }
+
+  /*______________________
+   
+  * FOOTER *
+  _______________________*/
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
 }
-}
- 
 
 @media screen and (max-width: 430px) {
-  /* HEADER */
+  /*______________________
+   
+  * HEADER *
+  _______________________*/
   .logo {
     max-width: 50%;
     top: 30px;
@@ -1040,12 +1113,6 @@ _______________________*/
     padding: 0 30px 0 30px;
   }
 
-  p {
-    font-size: 12px;
-    font-weight: 500;
-    padding: 0 20px 0 20px;
-  }
-
   .cards {
     flex-direction: column;
     gap: 15px;
@@ -1056,10 +1123,14 @@ _______________________*/
     width: 50%;
   }
 
-    /*_____________________
+  /*_____________________
   
   * SERVIÇOS *
   _______________________*/
+
+  .servicos {
+    padding: 20% 8%;
+  }
 
   .servicos__container {
     padding-bottom: 30%;
@@ -1067,7 +1138,7 @@ _______________________*/
 
   /*_____________________
   
-  * TESTIMONIALS *
+  * TESTEMUNHOS *
   _______________________*/
 
   .carousel-caption h4 {
@@ -1082,14 +1153,13 @@ _______________________*/
   .carousel-caption p {
     font-size: 12px;
     font-weight: 400;
- 
   }
 
   .carousel-caption span {
     font-size: 16px;
     font-weight: 600;
   }
- 
+
   /*_____________________
   
   * CONTACTO *
@@ -1102,10 +1172,25 @@ _______________________*/
     display: none;
   }
 
-  /* FOOTER*/
+  /*_____________________
+  
+  * FOOTER *
+  _______________________*/
   .footer-content {
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
+  }
+
+  .footer-contacts p {
+    font-size: 16px;
+  }
+
+  .footer-social-media {
+    gap: 1rem;
+  }
+
+  #footer-subscribe p {
+   font-size: 13px;
   }
 
   #input-group input {
@@ -1125,24 +1210,46 @@ _______________________*/
   }
 }
 
-/*___________________________________*/
 @media screen and (max-width: 390px) {
-  /* HEADER */
+  /*_____________________
+  
+  * HEADER *
+  _______________________*/
   .logo {
-    top: 10px;
+    top: 50px;
   }
 
   #content h1 {
     font-size: 20px;
-    padding-top: 3rem; /*mudei aqui de 4*/
+    padding-top: 2rem;
   }
 
   .cards .card {
-    height: auto;
+    width: 60%;
   }
 
-  /* TESTIMONIALS */
+  /*_____________________
+  
+  * SERVIÇOS *
+  _______________________*/
+  .servicos__container {
+    padding-bottom: 50%;
+  }
+
+
+  /*_____________________
+  
+  * TESTEMUNHOS *
+  _______________________*/
   .carousel-item {
     height: 26rem;
+  }
+
+  #input-group input {
+    padding: 12px;
+  }
+
+  #input-group button {
+    padding: 12px;
   }
 }
