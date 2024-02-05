@@ -406,7 +406,7 @@ _____________________________________*/
 }
 
 .servico__description {
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 500;
   font-family: "Krub", sans-serif;
   letter-spacing: 1px;
@@ -814,6 +814,19 @@ footer {
    
   * RESPONSIVE TO MOBILE *
   _______________________*/
+@media screen and (max-width: 1610px) {
+
+    .servico__description {
+      font-size: 12px;
+    }
+  }
+
+@media screen and (max-width: 1350px) {
+
+    .servico__description {
+      font-size: 10px;
+    }
+  }
 
 @media screen and (max-width: 1300px) {
   /*______________________
@@ -837,11 +850,11 @@ footer {
   }
 
   .servicos__container {
-    gap: 20px;
+    gap: 15px;
   }
 
   .servico {
-    width: 500px;
+    width: 600px;
   }
 
   /*______________________
@@ -883,7 +896,7 @@ footer {
   }
 
   .servico__description {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1136,6 +1149,10 @@ footer {
     padding-bottom: 30%;
   }
 
+  .servico__description {
+    font-size: 14px;
+  }
+
   /*_____________________
   
   * TESTEMUNHOS *
@@ -1236,7 +1253,9 @@ footer {
     padding-bottom: 50%;
   }
 
-
+  .servico__description {
+    font-size: 10px;
+  }
   /*_____________________
   
   * TESTEMUNHOS *
