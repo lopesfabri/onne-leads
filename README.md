@@ -5,9 +5,9 @@
 
 Simulação de uma landing page para captação de leads para a Consultora Onne. 
 
-Projeto criado para conclusão das horas práticas do estagio profissional do curso de Front-end Development do CESAE Digital, no período de junho de 2023 a fevereiro de 2024.
+Projeto criado para conclusão das horas práticas do estágio profissional do curso de Front-end Development do CESAE Digital, no período de junho de 2023 a fevereiro de 2024.
 
-Feito mantendo a identidade da empresa de forma simples e direta.
+Feito de forma simples com base na identidade da empresa.
 
 Tecnologias utilizadas: HTML, CSS, JS, PHP e MySQL.
 
